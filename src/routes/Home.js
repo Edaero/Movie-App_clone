@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Movie from "./components/5. Movie";
-// npm install react-router-dom 을 사용해 router을 만들 수 있다.
+import Movie from "../components/Movie";
 
 function Home() {
 // 1. 기본 값을 true로 가지는 state 생성
