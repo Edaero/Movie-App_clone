@@ -1,4 +1,4 @@
-
+// react-router는 동적 URL을 지원해준다.(URL에 변수를 넣을 수 있다.)
 // 7. react-router-dom을 사용하기 위해 import해야 하는 것들
 import {
   // BrowserRouter는 우리가 아는 웹사이트의 URL처럼 생겼다.
@@ -10,20 +10,23 @@ import Detail from "./routes/Detail"
 import Home from "./routes/Home"
 
 function App() { // Router을 먼저 렌더링 해준다.
-  return <Router>
-    {/* Switch가 하는 일은 한 번에 하나의 Route를 찾아서 컴포넌트를 렌더링한다. */}
-    <Switch>
-      {/* Route는 URL을 의미한다. */}
-      {/* path="/xxx"는 URL뒤에 붙일 주소를 의미한다. */}
-      <Route path="/movie">
-        <Detail />
-      </Route>
-      {/* path="/"는 Home을 의미한다. */}
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
-  </Router>
+  return (
+    <Router>
+      {/* Switch가 하는 일은 한 번에 하나의 Route를 찾아서 컴포넌트를 렌더링한다. */}
+      <Switch>
+        {/* Route는 URL을 의미한다. */}
+        {/* path="/xxx"는 URL뒤에 붙일 주소를 의미한다. */}
+        {/* /뒤에 :id를 추가해 영화의 id를 url의 뒤에 넣을 수 있다. */}
+        <Route path="/movie/:id">
+          <Detail />
+        </Route>
+        {/* path="/"는 Home을 의미한다. */}
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;

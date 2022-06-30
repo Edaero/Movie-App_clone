@@ -4,11 +4,11 @@ import {Link} from "react-router-dom"
 
 // 5. js로 따로 만들 경우엔 key가 필요하지 않다.
 // Movie component가 변수들을 parent component로부터 받아온다.
-function Movie({coverImg, title, summary, genres}) {
+function Movie({id, coverImg, title, summary, genres}) {
     return (<div>
-        <Link to="/movie"><img src={coverImg} alt={title}></img></Link>
+        <Link to={`/movie/${id}`}><img src={coverImg} alt={title}></img></Link>
         <h2>
-            <Link to="/movie">{title}</Link>
+            <Link to={`/movie/${id}`}>{title}</Link>
         </h2>
         <p>{summary}</p>
         <ul>
@@ -17,6 +17,7 @@ function Movie({coverImg, title, summary, genres}) {
     </div>)}
 
 Movie.propTypes = {
+    id: PropTypes.number.isRequired,
     coverImg: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
