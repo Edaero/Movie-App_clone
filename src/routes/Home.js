@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
+import styles from "./Home.module.css";
 
 function Home() {
     // 1. 기본 값을 true로 가지는 state 생성
@@ -22,9 +23,15 @@ function Home() {
         getMovies();
     }, []);
     return (
-        <div>
-        {loading ? (<h1>Loading...</h1>) : (
-            <div>
+        <div className={styles.container}>
+        {loading ? (
+            <div className={styles.loader}>
+                <div className={styles.loading}>
+                    <h1>Loading...</h1>
+                </div>
+            </div>
+        ) : (
+            <div className={styles.movies}>
             {/* 5. movies와 map을 사용해 영화를 화면에 표시 */}
             {/* 5. React.js에서 map을 써서 component들을 render할 떄 항상 고유 key를 넣어줘야한다. 
             영화 API에 있는 movie.id를 사용한다. */}
@@ -34,6 +41,7 @@ function Home() {
                     key={movie.id}
                     id={movie.id}
                     coverImg={movie.medium_cover_image}
+                    year={movie.year}
                     title={movie.title}
                     summary={movie.summary}
                     genres={movie.genres}

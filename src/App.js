@@ -1,9 +1,10 @@
 // react-router는 동적 URL을 지원해준다.(URL에 변수를 넣을 수 있다.)
 // 7. react-router-dom을 사용하기 위해 import해야 하는 것들
+
+// BrowserRouter는 우리가 아는 웹사이트의 URL처럼 생겼다.
+// 또 다른 HashRouter는 뒤에 해시태그가 붙는다. 보통 BrowserRouter를 쓴다.
+// Link는 브라우저의 갱신 없이 유저를 다른 페이지로 이동시켜주는 컴포넌트이다.
 import {
-  // BrowserRouter는 우리가 아는 웹사이트의 URL처럼 생겼다.
-  // 또 다른 HashRouter는 뒤에 해시태그가 붙는다. 보통 BrowserRouter를 쓴다.
-  // Link는 브라우저의 갱신 없이 유저를 다른 페이지로 이동시켜주는 컴포넌트이다.
   BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom";
 import Detail from "./routes/Detail"

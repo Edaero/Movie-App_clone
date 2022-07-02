@@ -1,19 +1,25 @@
 // 어떤 props를 가졌는지 알기 위해서 PropTypes를 임포트해준다.
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom"
+import styles from "./Movie.module.css"
 
 // 5. js로 따로 만들 경우엔 key가 필요하지 않다.
 // Movie component가 변수들을 parent component로부터 받아온다.
-function Movie({id, coverImg, title, summary, genres}) {
-    return (<div>
-        <Link to={`/movie/${id}`}><img src={coverImg} alt={title}></img></Link>
-        <h2>
-            <Link to={`/movie/${id}`}>{title}</Link>
-        </h2>
-        <p>{summary}</p>
-        <ul>
-            {genres.map(gen => <li key={gen}>{gen}</li>)}
-        </ul>
+function Movie({id, coverImg, title, year, summary, genres}) {
+    return (
+    <div className={styles.movie}>
+        <Link to={`/movie/${id}`}><img src={coverImg} alt={title} className={styles.movie_img}></img></Link>
+        <div>
+            <h2 className={styles.movie_title}>
+                <Link to={`/movie/${id}`}>{title}</Link>
+            </h2>
+            <h3 className={styles.movie_year}>{year}</h3>
+            {/* summary는 string이라서 array의 method를 사용할 수 있다. */}
+            <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
+            <ul className={styles.movie__genres}>
+                {genres.map(gen => <li key={gen}>{gen}</li>)}
+            </ul>
+        </div>
     </div>)}
 
 Movie.propTypes = {
