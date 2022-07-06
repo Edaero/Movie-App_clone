@@ -32,21 +32,25 @@ function Home() {
             </div>
         ) : (
             <div className={styles.movies}>
+                <div className={styles.deng}>
+                    <p className={styles.head}>Deng Movie Web</p>
+                </div>
+                <br></br>
             {/* 5. movies와 map을 사용해 영화를 화면에 표시 */}
             {/* 5. React.js에서 map을 써서 component들을 render할 떄 항상 고유 key를 넣어줘야한다. 
             영화 API에 있는 movie.id를 사용한다. */}
-            {movies.map((movie) =>(
-                // component를 가져온다.
-                <Movie
-                    key={movie.id}
-                    id={movie.id}
-                    coverImg={movie.medium_cover_image}
-                    year={movie.year}
-                    title={movie.title}
-                    summary={movie.summary}
-                    genres={movie.genres}
-                />
-            ))}
+                {movies.map((movie) =>(
+                    // component를 가져온다.
+                    <Movie
+                        key={movie.id}
+                        id={movie.id}
+                        coverImg={movie.medium_cover_image}
+                        year={movie.year}
+                        title={movie.title}
+                        summary={movie.summary}
+                        genres={movie.genres}
+                    />
+                ))}
             </div>
         )}
         </div>

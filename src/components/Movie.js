@@ -10,14 +10,14 @@ function Movie({id, coverImg, title, year, summary, genres}) {
     <div className={styles.movie}>
         <Link to={`/movie/${id}`}><img src={coverImg} alt={title} className={styles.movie_img}></img></Link>
         <div>
-            <h2 className={styles.movie_title}>
-                <Link to={`/movie/${id}`}>{title}</Link>
+            <h2>
+                <Link to={`/movie/${id}`} className={styles.movie_title}>{title}</Link>
             </h2>
-            <h3 className={styles.movie_year}>{year}</h3>
+            <h2 className={styles.movie_year}>{year}</h2>
             {/* summary는 string이라서 array의 method를 사용할 수 있다. */}
-            <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
-            <ul className={styles.movie__genres}>
-                {genres.map(gen => <li key={gen}>{gen}</li>)}
+            <p className={styles.movie_summary}>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
+            <ul>
+                {genres.map(gen => <li key={gen} className={styles.movie_genres}>{gen}</li>)}
             </ul>
         </div>
     </div>)}

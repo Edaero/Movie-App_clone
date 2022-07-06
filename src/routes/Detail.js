@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import  {useParams} from "react-router-dom";
 import MovieDetail from "../components/MovieDetail";
+import styles from "./Detail.module.css"
 
 function Detail() {
     // useParams를 사용해 URL에서 변경되는 영화의 id값을 받아온다
@@ -20,7 +21,7 @@ function Detail() {
         getMovie();
     }, [getMovie]);
     return (
-        <div>
+        <div className={styles.container}>
         {loading ? (<h1>Loading...</h1>) : (
             <div>
                 <MovieDetail
