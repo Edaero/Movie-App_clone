@@ -22,8 +22,14 @@ function Detail() {
     }, [getMovie]);
     return (
         <div className={styles.container}>
-        {loading ? (<h1>Loading...</h1>) : (
-            <div>
+        {loading ? (
+            <div className={styles.loader}>
+                <div className={styles.loading}>
+                    <h1>Loading...</h1>
+                </div>
+            </div>
+        ) : (
+            <div className={styles.detail}>
                 <MovieDetail
                     key={movieDetail.id}
                     coverImg={movieDetail.medium_cover_image}
