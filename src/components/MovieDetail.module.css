@@ -44,9 +44,3 @@
     width: 400px;
     margin: auto;
 }
-
-@media(max-width: 800px) {   /* screen width < 800px이라는 뜻 */
-    div {   /* max-width:800 은 screen width > 800px이라는 뜻 */
-    display: none;
-    }
-}
