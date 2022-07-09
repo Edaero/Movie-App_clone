@@ -16,4 +16,5 @@ API를 받아와 state로 data를 보여줌
 - 컴포넌트가 parent component로부터 변수를 받아와 사용할 수 있게 구현
 
 ## 결과물 이미지
-![result](https://user-images.githubusercontent.com/99079176/171597781-f289a9dc-156d-47a8-b015-57b3efc0b7b4.JPG)
+![image](https://user-images.githubusercontent.com/99079176/178107406-6765b2fa-258a-4040-ad0e-08aa9a447f71.png)
+![image](https://user-images.githubusercontent.com/99079176/178107432-f69c4ce0-16f1-4bd6-b719-1fab956cd5aa.png)
