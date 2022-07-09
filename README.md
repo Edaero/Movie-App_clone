@@ -1,5 +1,4 @@
 # Movie-App_clone
-API를 받아와 state로 data를 보여줌
 - [노마드 코더 React로 Movie-App 클론 코딩](https://nomadcoders.co/javascript-for-beginners/lobby)
 - 20220709완료
 - 사용언어: HTML, CSS, JavaScript, React, nodeJS
@@ -14,7 +13,6 @@ API를 받아와 state로 data를 보여줌
 > ### Movie.js, MovieDetail.js
 - PropTypes를 사용해 데이터를 가져오는 props의 유효성 검사 구현
 - 컴포넌트가 parent component로부터 변수를 받아와 사용할 수 있게 구현
-
 ## 결과물 이미지
 ![image](https://user-images.githubusercontent.com/99079176/178107406-6765b2fa-258a-4040-ad0e-08aa9a447f71.png)
 ![image](https://user-images.githubusercontent.com/99079176/178107432-f69c4ce0-16f1-4bd6-b719-1fab956cd5aa.png)
