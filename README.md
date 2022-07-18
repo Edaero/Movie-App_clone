@@ -1,6 +1,6 @@
 # Movie-App_clone
 - [노마드 코더 React로 Movie-App 클론 코딩](https://nomadcoders.co/javascript-for-beginners/lobby)
-- 20220709완료
+- 20220709 완료
 - 사용언어: HTML, CSS, JavaScript, React, nodeJS
 ## 구현 기능
 > ### App.js
