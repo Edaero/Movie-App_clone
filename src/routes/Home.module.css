@@ -1,57 +1,57 @@
 * {
-    font-family: 'Gowun Dodum', sans-serif;
-    font-family: 'Jua', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
+  font-family: "Jua", sans-serif;
 }
 
 .container {
-    background-color: white;
-    display: flex;
-    grid-template-rows: 100px 1fr;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  background-color: white;
+  display: flex;
+  grid-template-rows: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .deng {
-    width: 204%;
-    height: 68px;
-    background-color: lightslategray;
-    border-radius: 5px;
+  width: 204%;
+  height: 68px;
+  background-color: lightslategray;
+  border-radius: 5px;
 }
 
 .head {
-    font-size: 45px;
-    font-weight: bolder;
-    margin: auto;
-    margin-left: 30px;
+  font-size: 45px;
+  font-weight: bolder;
+  margin: auto;
+  margin-left: 30px;
 }
 
 .movies {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-gap: 30px;
-    width: 80%;
-    padding-top: 70px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-gap: 30px;
+  width: 80%;
+  padding-top: 70px;
+  padding: 10px;
 }
 
 .loader {
-    background-color: white;
-    margin-top: 20%;
+  background-color: white;
+  margin-top: 20%;
 }
 
 .loading {
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
-    width: 300px;
-    height: 100px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 300;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 300;
 }
 
-@media(max-width: 800px) {
-    div {
+@media (max-width: 800px) {
+  div {
     display: none;
-    }
+  }
 }
