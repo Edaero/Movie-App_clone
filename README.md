@@ -4,7 +4,7 @@
 - 사용언어: HTML, CSS, JavaScript, React, nodeJS
 ## 구현 기능
 > ### App.js
-- react-router-dom을 사용해 SPA 화면 전환 구현, 가독성 높임
+- react-router-dom을 사용해 SPA 구현, 가독성 높임
 > ### Home.js, Detail.js
 - API 데이터를 가져오는 동안 Loading창 구현
 - 영화 API를 활용해 영화 이미지, 제목, 개봉년도, 영화개요, 영화장르 정보 구현
