@@ -8,7 +8,7 @@ function Home() {
   // 3. 빈 배열을 가진 movie state 생성
   const [movies, setMovies] = useState([]);
   // 4. API를 json data로 받아옴
-  // sync-awit 사용법(요즘 보편적인 방법)
+  // async-awit 사용법(요즘 보편적인 방법)
   const getMovies = async () => {
     // 더 짧게 하는 방법
     const json = await (
