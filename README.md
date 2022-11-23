@@ -9,7 +9,6 @@
 - API 데이터를 가져오는 동안 Loading창 구현
 - 영화 API를 활용해 영화 이미지, 제목, 개봉년도, 영화개요, 영화장르 정보 구현
 - useParams를 사용해 URL에서 변경되는 영화의 id값을 받아와 URL에 적용
-- css에 mediaquery를 사용해 800px이하의 창에선 웹이 보이지 않도록 구현
 > ### Movie.js, MovieDetail.js
 - PropTypes를 사용해 데이터를 가져오는 props의 유효성 검사 구현
 - 컴포넌트가 parent component로부터 변수를 받아와 사용할 수 있게 구현
